@@ -21,8 +21,8 @@
   display: flex;
   flex-direction: column;
   margin-top: 60px;
-  margin-left: 14vw;
-  margin-right: 14vw;
+  margin-left: 5vw;
+  margin-right: 5vw;
 }
 
 .main {
@@ -34,7 +34,7 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 20px;
+  gap: 10px;
   margin-bottom: 20px;
 
 }
@@ -83,32 +83,50 @@
   display: flex;
   flex-direction: column;
 }
-
 .full-width-section {
   background-color: #f2efe9;
-  width: 100vw;
-  padding: 20px 0;
   box-sizing: border-box;
   display: flex;
   justify-content: center;
   margin-bottom: 40px;
   position: relative;
-  margin-left:-14vw;
-  height: 400px;
+  height: 80vh;
   overflow: hidden;
+  /* border-radius: 42px; */
+  /* margin-left: -5vw;
+  margin-right: -5vw; */
+
+}
+
+.nav-image-full {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+  position: relative;
+  overflow: hidden;
+  /* border-radius: 42px; */
+  margin-left: -26vw;
+  margin-right: -26vw;
+  
+}
+
+.image-full {
+  max-width: 100%; 
+  height: 100%;
+  object-fit: contain;
+  
 }
 
 /* Image container adjustments */
 .full-width-section img {
-  width: 100%; /* Ensures image stretches across full width */
-  max-width: none; /* Prevents image from shrinking */
-  height: auto; /* Maintains the aspect ratio */
+  max-width: 100%; 
+  height: 100%;
+  object-fit: cover;
 }
 
 /* Add this media query to adjust for mobile */
 @media (max-width: 768px) {
   .full-width-section {
-    padding: 20px 0; /* Adjust the padding for smaller screens */
     height: 300px;
   }
 
@@ -184,10 +202,21 @@
 .project-main {
   display: flex;
   flex-direction: column;
-  gap: 30px;
-  margin-left: 13vw;
-  margin-right: 13vw;
+  gap: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 625px;
 }
+
+.project-header {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 825px;
+}
+
 
 @media (max-width: 900px) {
   .project-main {
@@ -200,11 +229,22 @@
 .quote {
   display: flex;
   background-color: #f2efe9;
+  /* 12144c */
+  align-items: center;
+  text-align: center;
   padding: 30px;
   border-radius: 10px;
   font-size: 16px;
   margin-bottom: 20px;
-  height: 80px;
+  height: 120px;
+  justify-content: center;
+}
+
+.problem {
+  display: grid;
+  margin-top: 30px;
+  grid-template-columns: 1fr 1fr;
+  gap: 3vw;
 }
 
 .upcoming {
@@ -215,4 +255,30 @@
   background-color: #12144c;
   padding: 2px 10px;
   border-radius: 5px;
+}
+
+.container {
+  position: relative;
+  height: auto;
+  overflow: hidden; 
+}
+
+.overlay-video {
+  position: absolute;
+  z-index: 0;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 89%;
+  transform: translate(-50%, -55%);
+  object-fit: contain;
+  pointer-events: none;
+}
+
+.overlay-image {
+  position: relative;
+  width: 100%;
+  height: auto;
+  display: block;
+  z-index: 1; 
 }

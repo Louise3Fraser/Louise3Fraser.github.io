@@ -1,7 +1,5 @@
 import React, { useEffect } from "react";
 import "../pages-css/Art.css";
-import Navigation from "../components/organization/Navigation";
-import Footer from "../components/organization/Footer";
 import iceland from "../media/example-work/iceland.jpg";
 import invusion1 from "../media/example-work/invusion-1.png";
 import invusion2 from "../media/example-work/invusion-2.png";
@@ -27,31 +25,45 @@ import art4 from "../media/example-work/art-4.png";
 import mushroom2 from "../media/example-work/mushrrom-2.png";
 import lisa from "../media/example-work/lisa.png";
 
+
+const images = [
+  iceland,
+  invusion1,
+  invusion2,
+  lambda,
+  shape,
+  vitality,
+  marshmallow,
+  asce,
+  design,
+  ace,
+  vitalityPoster,
+  sail,
+  stickers,
+  portrait,
+  vandy,
+  portrait2,
+  cafe,
+  anchorLogo,
+  art1,
+  art2,
+  art3,
+  art4,
+  mushroom2,
+  lisa,
+];
+
 export default function Art() {
   useEffect(() => {
-    const highlights = document.querySelectorAll(".fade-in-section");
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add("visible");
-        }
-      });
+    images.forEach((src) => {
+      const img = new Image();
+      img.src = src;
     });
-
-    highlights.forEach((highlight) => {
-      observer.observe(highlight);
-    });
-
-    return () => {
-      highlights.forEach((highlight) => {
-        observer.unobserve(highlight);
-      });
-    };
   }, []);
+
 
   return (
     <div className="art-wrapper">
-      <Navigation />
       <div
         style={{
           display: "flex",
@@ -59,7 +71,7 @@ export default function Art() {
           alignItems: "center",
         }}
       >
-        <p className="header-bold-large fade-in-section">Selected Art</p>
+        <p className="header-bold-large ">Selected Art</p>
 
         <p
           style={{
@@ -67,7 +79,7 @@ export default function Art() {
             paddingTop: "20px",
             maxWidth: "100%",
           }}
-          className="body-main fade-in-section"
+          className="body-main "
         >
           Here's a small collection of some art I've made throughout the years.
           A lot of my artwork comes from my graphic design job at 'Dores Design!
@@ -81,14 +93,14 @@ export default function Art() {
               loading="lazy"
               alt="img"
               src={iceland}
-              className="nav-image fade-in-section"
+              className="nav-image "
               style={{ margin: "0px" }}
             />
             <img
               loading="lazy"
               alt="img"
               src={sail}
-              className="nav-image fade-in-section"
+              className="nav-image "
               style={{ margin: "0px" }}
             />
 
@@ -96,42 +108,42 @@ export default function Art() {
               loading="lazy"
               alt="img"
               src={art1}
-              className="nav-image fade-in-section"
+              className="nav-image "
               style={{ margin: "0px" }}
             />
             <img
               loading="lazy"
               alt="img"
               src={shape}
-              className="nav-image fade-in-section"
+              className="nav-image "
               style={{ margin: "0px" }}
             />
             <img
               loading="lazy"
               alt="img"
               src={mushroom2}
-              className="nav-image fade-in-section"
+              className="nav-image "
               style={{ margin: "0px" }}
             />
             <img
               loading="lazy"
               alt="img"
               src={stickers}
-              className="nav-image fade-in-section"
+              className="nav-image "
               style={{ margin: "0px" }}
             />
             <img
               loading="lazy"
               alt="img"
               src={art4}
-              className="nav-image fade-in-section"
+              className="nav-image "
               style={{ margin: "0px" }}
             />
             <img
               loading="lazy"
               alt="img"
               src={anchorLogo}
-              className="nav-image fade-in-section"
+              className="nav-image "
               style={{ margin: "0px" }}
             />
           </div>
@@ -141,56 +153,56 @@ export default function Art() {
               loading="lazy"
               alt="img"
               src={marshmallow}
-              className="nav-image fade-in-section"
+              className="nav-image "
               style={{ margin: "0px" }}
             />
             <img
               loading="lazy"
               alt="img"
               src={lambda}
-              className="nav-image fade-in-section"
+              className="nav-image "
               style={{ margin: "0px" }}
             />
             <img
               loading="lazy"
               alt="img"
               src={invusion1}
-              className="nav-image fade-in-section"
+              className="nav-image "
               style={{ margin: "0px" }}
             />
             <img
               loading="lazy"
               alt="img"
               src={art3}
-              className="nav-image fade-in-section"
+              className="nav-image "
               style={{ margin: "0px" }}
             />
             <img
               loading="lazy"
               alt="img"
               src={invusion2}
-              className="nav-image fade-in-section"
+              className="nav-image "
               style={{ margin: "0px" }}
             />
             <img
               loading="lazy"
               alt="img"
               src={lisa}
-              className="nav-image fade-in-section"
+              className="nav-image "
               style={{ margin: "0px" }}
             />
             <img
               loading="lazy"
               alt="img"
               src={asce}
-              className="nav-image fade-in-section"
+              className="nav-image "
               style={{ margin: "0px" }}
             />
             <img
               loading="lazy"
               alt="img"
               src={cafe}
-              className="nav-image fade-in-section"
+              className="nav-image "
               style={{ margin: "0px" }}
             />
           </div>
@@ -200,35 +212,35 @@ export default function Art() {
               loading="lazy"
               alt="img"
               src={design}
-              className="nav-image fade-in-section"
+              className="nav-image "
               style={{ margin: "0px" }}
             />
             <img
               loading="lazy"
               alt="img"
               src={portrait}
-              className="nav-image fade-in-section"
+              className="nav-image "
               style={{ margin: "0px" }}
             />
             <img
               loading="lazy"
               alt="img"
               src={vitality}
-              className="nav-image fade-in-section"
+              className="nav-image "
               style={{ margin: "0px" }}
             />
             <img
               loading="lazy"
               alt="img"
               src={art2}
-              className="nav-image fade-in-section"
+              className="nav-image "
               style={{ margin: "0px" }}
             />
             <img
               loading="lazy"
               alt="img"
               src={ace}
-              className="nav-image fade-in-section"
+              className="nav-image "
               style={{ margin: "0px" }}
             />
 
@@ -236,27 +248,26 @@ export default function Art() {
               loading="lazy"
               alt="img"
               src={vitalityPoster}
-              className="nav-image fade-in-section"
+              className="nav-image "
               style={{ margin: "0px" }}
             />
             <img
               loading="lazy"
               alt="img"
               src={portrait2}
-              className="nav-image fade-in-section"
+              className="nav-image "
               style={{ margin: "0px" }}
             />
             <img
               loading="lazy"
               alt="img"
               src={vandy}
-              className="nav-image fade-in-section"
+              className="nav-image "
               style={{ margin: "0px" }}
             />
           </div>
         </div>
       </div>
-      <Footer />
     </div>
   );
 }

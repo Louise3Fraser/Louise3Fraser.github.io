@@ -24,20 +24,34 @@ export default function Footer() {
 
   return (
     <div className="footer">
-      <hr />
       <div
         style={{
           display: "flex",
-          flexDirection: "column",
+          flexDirection: "row",
           alignItems: "center",
+          
         }}
       >
-        <p className="body-main">@2024</p>
-        <p className="body-main">
-          Coded from scratch
-          <i className="em em-star2" role="presentation" aria-label=""></i>
+        <div>
+        <p className="header-subtitle" style={{ color: "#FFFDF9", }}>
+          Coded from scratch utilizing
+        </p>
+        <p className="header-subtitle" style={{ color: "#FFFDF9",}}>
+        JS, CSS, HTML
+        </p></div>
+      </div>
+      <div style={{display:"flex", flexDirection:"row", gap:"20px", alignSelf:"center"}}>
+      <p className="job" style={{ color: "#FFFDF9" }}>
+          Louise Fraser
+        </p>
+        <p className="job" style={{ color: "#FFFDF9" }}>
+         | 
+        </p>
+        <p className="job" style={{ color: "#FFFDF9" }}>
+          2024
         </p>
       </div>
+     
     </div>
   );
 }

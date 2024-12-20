@@ -34,7 +34,6 @@ export default function CarShare() {
 
   return (
     <div className="project">
-      <Navigation />
       <div className="main">
         <ProjectHeading
           title={"CarShare"}
@@ -71,7 +70,7 @@ export default function CarShare() {
         <h4
           className="job"
           style={{
-            color: "#6264D3",
+            color: "#EA5F27",
             fontWeight: "600",
             fontSize: "14px",
           }}

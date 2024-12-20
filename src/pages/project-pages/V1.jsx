@@ -34,7 +34,6 @@ export default function V1() {
 
   return (
     <div className="project">
-      <Navigation />
       <div className="main">
         <ProjectHeading
           title={"V1 Portfolio"}
@@ -61,7 +60,7 @@ export default function V1() {
         <h4
           className="job"
           style={{
-            color: "#6264D3",
+            color: "#EA5F27",
             fontWeight: "600",
             fontSize: "14px",
             marginBottom: "40px",

@@ -1,13 +1,16 @@
 .footer {
-    margin-bottom: 30px;
-    margin-top: 15vh
+    margin-top: 15vh;
+    /* background-color: #030B35; */
+    background-color: #031F35;
+    height: 400px;
+    padding: 120px;
 }
 
 hr {
     display: block;
     height: 1px;
     border: 0;
-    border-top: 1px solid #ccc;
-    margin-bottom: 3em;
+    border-top: 1px solid rgb(212, 212, 212);
+    margin: 2.5em 0px;
     padding: 0;
 }

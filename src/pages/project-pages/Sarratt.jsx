@@ -39,7 +39,6 @@ export default function Sarratt() {
 
   return (
     <div className="project">
-      <Navigation />
       <div className="main">
         <ProjectHeading
           title={"Sarratt Art Studios"}

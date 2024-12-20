@@ -128,10 +128,11 @@ export default function About() {
             style={{
               flex: "1",
               margin: "0px",
+              height:"450px"
             }}
           />
           <p className="body-main-link fade-in-section">
-            My friends and I in Tasmania! (I'm the tall one:))
+            A trip to the beautiful Tasmania.
           </p>
         </div>
         <div

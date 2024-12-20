@@ -9,6 +9,7 @@ export default function ProjectHeading({
   type,
   bool,
   progress,
+  yes,
 }) {
   const themeQuery = useTheme();
   const screenSize = useMediaQuery(themeQuery.breakpoints.up("lg"));
@@ -16,14 +17,36 @@ export default function ProjectHeading({
   return (
     <div className="project-heading">
       <div
+        className="full-width-section"
+        style={{ paddingBottom: yes ? "0px" : "" }}
+      >
+        <img
+          loading="lazy"
+          alt="img"
+          src={img}
+          style={{
+            margin: "0px",
+            marginBottom: bool ? "-280px" : "0px",
+          }}
+        />
+      </div>
+      <div
         style={{
           display: "flex",
           flexDirection: "column",
-          alignItems: "center",
+          alignItems: "flex-start",
         }}
       >
-        <h4 className="header-largest">{title}</h4>
         <h4
+          style={{
+            maxWidth: screenSize ? "50%" : "100%",
+            marginBottom: "30px",
+          }}
+          className="header-largest"
+        >
+          {title}
+        </h4>
+        {/* <h4
           className="body-main"
           style={{
             maxWidth: screenSize ? "50%" : "100%",
@@ -33,43 +56,13 @@ export default function ProjectHeading({
           {subTitle}
 
           {progress ? (
-            <span style={{ color: "#6264D3", fontWeight: "500" }}>
+            <span style={{ color: "#EA5F27", fontWeight: "500" }}>
               {"  "}*In progress
             </span>
           ) : (
             <></>
           )}
-        </h4>
-      </div>
-      <div className="full-width-section">
-        {type === "img" ? (
-          <img
-            loading="lazy"
-            alt="img"
-            src={img}
-            style={{
-              margin: "0px",
-              objectFit: "contain",
-              borderRadius: "10px",
-              marginBottom: bool ? "-280px" : "0px",
-            }}
-          />
-        ) : (
-          <video
-            src={img}
-            className="card-src"
-            autoPlay
-            playsInline
-            loop
-            muted
-            style={{
-              margin: "0px",
-              objectFit: "contain",
-              maxWidth: "35%",
-              boxShadow: "0px 4px 8px rgba(0, 0, 0, 0.2)",
-            }}
-          />
-        )}
+        </h4> */}
       </div>
     </div>
   );

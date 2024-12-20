@@ -2,8 +2,9 @@
     display: flex;
     flex-direction: column;
     margin-top: 60px;
-    margin-left: 14vw;
-    margin-right: 14vw;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    min-height: 200vh;
 }
 
 .headers {
@@ -11,6 +12,7 @@
     flex-direction: column;
     align-items: flex-start;
     margin-top: 80px;
+    max-width: 800px;
     margin-bottom: 180px;
     gap:0px;
 }

@@ -1,0 +1,12 @@
+.new {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    align-items: flex-start;
+    justify-content: center;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    flex-direction: column;
+    gap: 12px
+}

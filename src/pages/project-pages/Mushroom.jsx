@@ -62,7 +62,6 @@ export default function Mushroom() {
 
   return (
     <div className="project">
-      <Navigation />
       <div className="main">
         <ProjectHeading
           title={"Mushroom Mayhem"}

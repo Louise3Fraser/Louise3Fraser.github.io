@@ -1,32 +1,30 @@
 import React from "react";
-import Footer from "../components/organization/Footer";
-import Navigation from "../components/organization/Navigation";
+import Button from "../components/Button";
 import "../pages-css/Home.css";
 import Projects from "../sections/Projects";
 
 function Home() {
   return (
     <div className="home">
-      <Navigation />
       <div className="headers">
         <p className="header-largest">
           Hi there, I'm Louise Fraser.
-          <i
+          {/* <i
             style={{ height: "40px" }}
             class="em em-sparkles"
             aria-role="presentation"
             aria-label="SPARKLES"
-          ></i>
+          ></i> */}
         </p>
         <p className="header-largest">
-          Upcoming graduate at Vanderbilt University,
+          Upcoming Vandy grad,
         </p>
         <p className="header-largest">aspiring product designer.{" "}
         </p>
+        {/* <Button content={"Fun Fact"}/> */}
       </div>
       <Projects />
       {/* <Upcoming/> */}
-      <Footer />
     </div>
   );
 }

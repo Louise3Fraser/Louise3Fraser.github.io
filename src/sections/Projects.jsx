@@ -35,12 +35,12 @@ export default function Projects() {
           path={"/sarratt-art-studios"}
           subtext={"graphic design, logo, branding"}
         />
-        <ProjectCards
+        {/* <ProjectCards
           title={"CarShare"}
           src={carshare}
           path={"/carshare"}
           subtext={"web design, full-stack engineering"}
-        />
+        /> */}
        
         <ProjectCards
           title={"Mushroom Mayhem"}

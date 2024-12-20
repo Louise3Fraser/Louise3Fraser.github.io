@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 import { useNavigate, useLocation } from "react-router-dom";
 import { useTheme, useMediaQuery } from "@mui/material";
 import logo from "../../media/logo.png"
+
 export default function Navigation() {
   const navigate = useNavigate();
   const location = useLocation();
@@ -46,13 +47,13 @@ export default function Navigation() {
   };
 
   return (
-    <div style={{marginBottom: "100px"}}>
+    <div style={{marginBottom: "50px", marginLeft:"5vw", marginRight:"5vw", marginTop:"40px"}}>
       <div
         className="navigation"
         style={{
           flexDirection: screenSizeSm ? "row" : "column",
           alignItems: screenSizeSm ? "flex-end" : "center",
-          gap: screenSizeSm ? "0px" : "20px"
+          gap: screenSizeSm ? "0px" : "20px",
         }}
       >
          <img loading="lazy"
